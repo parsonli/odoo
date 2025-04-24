@@ -782,8 +782,12 @@ class Website(Home):
         match = re.match(pattern, lang)
         language = [match.group(1), match.group(2) or ''] if match else ['en', 'US']
         url = "http://google.com/complete/search"
+        proxy = {
+            'http':'127.0.0.1:7890',
+            'https':'127.0.0.1:7890'
+        }
         try:
-            req = requests.get(url, params={
+            req = requests.get(url, proxies=proxy, params={
                 'ie': 'utf8', 'oe': 'utf8', 'output': 'toolbar', 'q': keywords, 'hl': language[0], 'gl': language[1]})
             req.raise_for_status()
             response = req.content
