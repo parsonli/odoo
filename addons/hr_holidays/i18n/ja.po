@@ -7,6 +7,7 @@
 # Noma Yuki, 2023
 # Ryoko Tsuda <ryoko@quartile.co>, 2024
 # Wil Odoo, 2024
+# Tiffany Chang, 2025
 # Junko Augias, 2025
 # 
 msgid ""
@@ -187,7 +188,7 @@ msgstr "%s on Time Off : %.2f 日(複数の可能性あり)"
 #: code:addons/hr_holidays/models/hr_leave.py:0
 #, python-format
 msgid "%s on Time Off : %.2f hour(s)"
-msgstr "%sオンタイムオフ:%。2f時間(複数の可能性あり)"
+msgstr "%sオンタイムオフ:%.2f時間(複数の可能性あり)"
 
 #. module: hr_holidays
 #. odoo-python
@@ -1283,7 +1284,7 @@ msgstr "8月"
 #: code:addons/hr_holidays/static/src/dashboard/time_off_card.xml:0
 #, python-format
 msgid "Available"
-msgstr "処理可能"
+msgstr "利用可能"
 
 #. module: hr_holidays
 #. odoo-javascript
@@ -4697,7 +4698,7 @@ msgstr "と"
 #: code:addons/hr_holidays/static/src/dashboard/time_off_card.xml:0
 #, python-format
 msgid "available"
-msgstr "取得可能"
+msgstr "利用可能"
 
 #. module: hr_holidays
 #: model:ir.ui.menu,name:hr_holidays.menu_hr_available_holidays_report_tree
