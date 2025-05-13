@@ -31793,7 +31793,7 @@ msgstr "Relatie"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_partner_autocomplete
 msgid "Partner Autocomplete"
-msgstr "Relatie automatisch aanvullen"
+msgstr "Partner Autocomplete"
 
 #. module: base
 #: model:ir.model,name:base.model_res_partner_category
@@ -39078,7 +39078,7 @@ msgstr "Soort:"
 #. module: base
 #: model:res.country,name:base.tr
 msgid "Türkiye"
-msgstr "Turkjije"
+msgstr "Turkije"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_tr
