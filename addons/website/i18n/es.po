@@ -12,16 +12,16 @@
 # Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2024
 # Pedro M. Baeza <pedro.baeza@tecnativa.com>, 2025
 # Wil Odoo, 2025
-# Larissa Manderfeld, 2025
 # Pilar Vargas, 2025
+# Larissa Manderfeld, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 20:36+0000\n"
+"POT-Creation-Date: 2025-06-13 00:52+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Pilar Vargas, 2025\n"
+"Last-Translator: Larissa Manderfeld, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -7481,7 +7481,7 @@ msgstr "Iconos pequeños"
 #. module: website
 #: model:website.configurator.feature,name:website.feature_module_live_chat
 msgid "Live Chat"
-msgstr "Chat en vivo"
+msgstr "Chat en directo"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.theme_view_kanban
@@ -7491,14 +7491,14 @@ msgstr "Vista previa en vivo"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Livechat"
-msgstr "Chat en vivo"
+msgstr "Chat en directo"
 
 #. module: website
 #. odoo-javascript
 #: code:addons/website/static/src/systray_items/new_content.js:0
 #, python-format
 msgid "Livechat Widget"
-msgstr "Widget de chat en vivo"
+msgstr "Widget de chat en directo"
 
 #. module: website
 #. odoo-javascript
@@ -7526,7 +7526,7 @@ msgstr "Logotipo"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_minimalist
 msgid "Logo of MyCompany"
-msgstr "Logotipo de MyCompany"
+msgstr "Logotipo de MiCompañía"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8025,7 +8025,7 @@ msgstr "Módulo de Automatización de marketing"
 #. module: website
 #: model:ir.model.fields,field_description:website.field_res_config_settings__module_website_livechat
 msgid "Module Website Livechat"
-msgstr "Módulo del Chat en vivo del Sitio web"
+msgstr "Módulo del Chat en directo del Sitio web"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -8042,9 +8042,9 @@ msgid ""
 msgstr ""
 "Supervise a sus visitantes mientras navegan en su sitio web con la "
 "aplicación Marketing social de Odoo. Interactúe con ellos con solo un clic "
-"gracias al chat en vivo o con una notificación emergente. Si han completado "
-"uno de sus formularios, también puede enviarles un SMS o llamarles mientras "
-"navegan por su sitio web."
+"gracias al chat en directo o con una notificación emergente. Si han "
+"completado uno de sus formularios, también puede enviarles un SMS o "
+"llamarles mientras navegan por su sitio web."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_odoo_menu
@@ -11483,6 +11483,7 @@ msgstr "El límite debe estar entre 1 y 16."
 #, python-format
 msgid "The logo is too large. Please upload a logo smaller than 2.5 MB."
 msgstr ""
+"El logotipo es demasiado grande. Suba un logotipo que ocupe menos de 2,5 MB."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -12261,6 +12262,13 @@ msgid "URL matching those filters will be rewritten using the CDN Base URL"
 msgstr ""
 "La URL que coincida con esos filtros se escribirá a través de la URL base "
 "CDN "
+
+#. module: website
+#. odoo-python
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "URL must not start with '#'."
+msgstr "La URL no debe comenzar con \"#\"."
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__url_to
@@ -13467,7 +13475,7 @@ msgid ""
 "You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies.\n"
 "                            Each browser is a little different, so look at your browser's Help menu to learn the correct way to modify your cookies."
 msgstr ""
-"Puede elegir entre dos opciones: que su computadora le advierta cada vez que se envía una cookie o desactivar todas las cookies.\n"
+"Puede elegir entre dos opciones: que su ordenador le advierta cada vez que se envía una cookie o desactivar todas las cookies.\n"
 "                            Cada navegador es distinto, así que consulte el menú de Ayuda de su navegador para aprender la forma correcta de modificar sus cookies."
 
 #. module: website
@@ -13833,6 +13841,13 @@ msgid "and copy paste the address of the font page here."
 msgstr "e inserte aquí la dirección de la página de fuentes."
 
 #. module: website
+#. odoo-python
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "base URL of 'URL to' should not be same as 'URL from'."
+msgstr "La URL base de “URL a” no debe ser la misma que “URL de”."
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "big"
 msgstr "grande"
@@ -14050,7 +14065,7 @@ msgstr "título, h1"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
 msgid "hello@mycompany.com"
-msgstr "hello@mycompany.com"
+msgstr "hello@MiCompañía.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets

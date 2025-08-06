@@ -1712,6 +1712,17 @@ X[]
                     contentAfter: '<p>ab</p><p>[]<br></p><p>ef</p>',
                 });
             });
+            it('should not delete text on the next container', async () => {
+                await testEditor(BasicEditor, {
+                    contentBefore: unformat(`
+                        <p>keep<br>[delete</p>
+                        <p>delete<br>delete<br>]</p>
+                        <p>keep</p>
+                    `),
+                    stepFunction: deleteBackward,
+                    contentAfter: '<p>keep<br>[]keep</p>',
+                });
+            });
         });
     });
 
@@ -4001,6 +4012,16 @@ X[]
                         contentBefore: '<div><a>ab[]</a>cd</div>',
                         stepFunction: pressEnter,
                         contentAfter: '<div><a>ab</a><br>[]cd</div>',
+                    });
+                });
+                it('should keep the last line break in the old paragraph', async () => {
+                    const pressEnter = editor => {
+                        editor.document.execCommand('insertParagraph');
+                    };
+                    await testEditor(BasicEditor, {
+                        contentBefore: '<div><p>abc<br>[]<br></p></div>',
+                        stepFunction: pressEnter,
+                        contentAfter: '<div><p>abc<br><br></p><p>[]<br></p></div>',
                     });
                 });
                 it('should insert a paragraph break outside the starting edge of an anchor', async () => {

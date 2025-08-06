@@ -1754,7 +1754,7 @@ msgstr "Konfiguration"
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_config_view_form
 #: model_terms:ir.ui.view,arch_db:point_of_sale.pos_payment_method_view_form
 msgid "Configurations &gt; Settings"
-msgstr "Konfigurationseinstellungen &gt; Einstellungen"
+msgstr "Konfigurationen &gt; Einstellungen"
 
 #. module: point_of_sale
 #: model_terms:ir.actions.act_window,help:point_of_sale.action_pos_config_kanban
@@ -5096,7 +5096,7 @@ msgstr "Produktkategorie des Kassensystems"
 #. module: point_of_sale
 #: model:account.tax.group,name:point_of_sale.pos_taxe_group_0
 msgid "PoS Taxes"
-msgstr ""
+msgstr "Kassensteuern"
 
 #. module: point_of_sale
 #. odoo-python

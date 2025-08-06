@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 20:36+0000\n"
+"POT-Creation-Date: 2025-06-13 00:52+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Larissa Manderfeld, 2025\n"
 "Language-Team: German (https://app.transifex.com/odoo/teams/41243/de/)\n"
@@ -703,7 +703,7 @@ msgid ""
 "me-2\"/><span>info@yourcompany.example.com</span>"
 msgstr ""
 "<i class=\"fa fa-1x fa-fw fa-envelope "
-"me-2\"/><span>info@yourcompany.example.com</span>"
+"me-2\"/><span>info@ihrunternehmen.beispiel.com</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
@@ -1091,7 +1091,7 @@ msgid ""
 msgstr ""
 "<small>\n"
 "                            <i class=\"fa fa-1x fa-fw fa-envelope me-1\"/>\n"
-"                            info@yourcompany.example.com\n"
+"                            info@ihrunternehmen.beispiel.com\n"
 "                        </small>"
 
 #. module: website
@@ -1106,7 +1106,7 @@ msgid ""
 "info@yourcompany.example.com</small>"
 msgstr ""
 "<small><i class=\"fa fa-1x fa-fw fa-envelope me-1\"/> "
-"info@yourcompany.example.com</small>"
+"info@ihrunternehmen.beispiel.com</small>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.header_text_element
@@ -1247,7 +1247,7 @@ msgid ""
 "MyCompany</span>"
 msgstr ""
 "<span class=\"s_blockquote_author text-muted\"><b>Iris DOE</b> • CEO von "
-"MyCompany</span>"
+"MeinUnternehmen</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_quotes_carousel
@@ -1256,7 +1256,7 @@ msgid ""
 "MyCompany</span>"
 msgstr ""
 "<span class=\"s_blockquote_author text-muted\"><b>Jane DOE</b> • CEO von "
-"MyCompany</span>"
+"MeinUnternehmen</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_blockquote
@@ -1266,7 +1266,7 @@ msgid ""
 "MyCompany</span>"
 msgstr ""
 "<span class=\"s_blockquote_author text-muted\"><b>John DOE</b> • CEO von "
-"MyCompany</span>"
+"MeinUnternehmen</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -7555,7 +7555,7 @@ msgstr "Logo"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_minimalist
 msgid "Logo of MyCompany"
-msgstr "Logo von MyCompany"
+msgstr "Logo von MeinUnternehmen"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8203,7 +8203,7 @@ msgstr "Meine Website"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 #: model_terms:ir.ui.view,arch_db:website.template_footer_minimalist
 msgid "MyCompany"
-msgstr "MyCompany"
+msgstr "MeinUnternehmen"
 
 #. module: website
 #. odoo-javascript
@@ -8966,7 +8966,7 @@ msgstr "Hervorragende Bilder"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Over The Content"
-msgstr "Über den Inhalt"
+msgstr "Über dem Inhalt"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -11515,6 +11515,7 @@ msgstr "Das Limit muss zwischen 1 und 16 liegen."
 #, python-format
 msgid "The logo is too large. Please upload a logo smaller than 2.5 MB."
 msgstr ""
+"Das Logo ist zu groß. Laden Sie ein Logo hoch, das kleiner als 2,5 MB ist."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -12299,6 +12300,13 @@ msgid "URL matching those filters will be rewritten using the CDN Base URL"
 msgstr ""
 "URL, die über diese Filter erkannt werden, werden mit der CDN-Basis-URL "
 "überschrieben"
+
+#. module: website
+#. odoo-python
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "URL must not start with '#'."
+msgstr "URL muss mit „#“ beginnen."
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__url_to
@@ -13887,6 +13895,13 @@ msgid "and copy paste the address of the font page here."
 msgstr "und fügen Sie die Adresse der Schriftseite hier ein."
 
 #. module: website
+#. odoo-python
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "base URL of 'URL to' should not be same as 'URL from'."
+msgstr "Basis-URL der „URL zu“ sollte nicht dieselbe sein wie „URL von“."
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "big"
 msgstr "groß"
@@ -14104,7 +14119,7 @@ msgstr "Überschrift, Ü1"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_contact
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
 msgid "hello@mycompany.com"
-msgstr "hello@mycompany.com"
+msgstr "hello@meinunternehmen.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -14161,7 +14176,7 @@ msgstr "in der oberen rechten Ecke, um mit dem Entwurf zu beginnen."
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 msgid "info@yourcompany.com"
-msgstr "info@yourcompany.com"
+msgstr "info@ihrunternehmen.com"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.footer_custom
@@ -14169,7 +14184,7 @@ msgstr "info@yourcompany.com"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_centered
 #: model_terms:ir.ui.view,arch_db:website.template_footer_headline
 msgid "info@yourcompany.example.com"
-msgstr "info@yourcompany.example.com"
+msgstr "info@ihrunternehmen.beispiel.com"
 
 #. module: website
 #. odoo-javascript

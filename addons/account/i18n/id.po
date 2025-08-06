@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 20:35+0000\n"
+"POT-Creation-Date: 2025-06-27 02:30+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Wil Odoo, 2025\n"
 "Language-Team: Indonesian (https://app.transifex.com/odoo/teams/41243/id/)\n"
@@ -2694,7 +2694,7 @@ msgstr "Akun Analitik"
 #: model:ir.model.fields,field_description:account.field_account_move_line__analytic_distribution
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model_line__analytic_distribution
 msgid "Analytic Distribution"
-msgstr "Analisa Distribusi"
+msgstr "Distribusi Analitik"
 
 #. module: account
 #: model:ir.model,name:account.model_account_analytic_distribution_model
@@ -5697,7 +5697,6 @@ msgstr "Buang"
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_move_line.py:0
-#: code:addons/account/models/account_move_line.py:0
 #: model:ir.model.fields.selection,name:account.selection__account_move_line__display_type__discount
 #, python-format
 msgid "Discount"
@@ -5777,6 +5776,11 @@ msgstr "Diskon sebesar %(amount)s bila dibayar dalam %(days)s hari"
 #: model:ir.model.fields,field_description:account.field_account_analytic_applicability__display_account_prefix
 msgid "Display Account Prefix"
 msgstr "Tampilkan Awalan Akun"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_journal__display_alias_fields
+msgid "Display Alias Fields"
+msgstr "Tampilkan Field Alias"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_accrued_orders_wizard__display_amount
@@ -8568,7 +8572,7 @@ msgstr ""
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "Items With Missing Analytic Distribution"
-msgstr ""
+msgstr "Item Dengan yang Kurang Distribusi Analitik"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__res_company__fiscalyear_last_month__1
@@ -12657,7 +12661,7 @@ msgstr "See all activities"
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "See items"
-msgstr ""
+msgstr "Lihat item"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__type
@@ -16933,10 +16937,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/wizard/account_payment_register.py:0
 #, python-format
-msgid "You can't create payments for entries belonging to different branches."
+msgid ""
+"You can't create payments for entries belonging to different branches "
+"without access to parent company."
 msgstr ""
-"Anda tidak dapat membuat pembayaran untuk entri yang berasal ke branch-"
-"branch yang berbeda."
+"Anda tidak dapat membuat pembayaran untuk entri yang dimiliki cabang-cabang "
+"yang berbeda tanpa akses ke perusahaan induk."
 
 #. module: account
 #. odoo-python

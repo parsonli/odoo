@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 20:36+0000\n"
+"POT-Creation-Date: 2025-06-13 00:52+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Fernanda Alvarez, 2025\n"
 "Language-Team: Spanish (Latin America) (https://app.transifex.com/odoo/teams/41243/es_419/)\n"
@@ -2159,7 +2159,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Always Underline"
-msgstr "Siempre subrayar"
+msgstr "Siempre subrayado"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -2229,7 +2229,7 @@ msgstr "Analítica<br/>(opcional)"
 #: code:addons/website/static/src/js/editor/snippets.options.js:0
 #, python-format
 msgid "Anchor copied to clipboard<br>Link: %s"
-msgstr "Enlace ancla pegado al portapapeles<br>Enlace: %s"
+msgstr "Enlace ancla copiado al portapapeles<br>Enlace: %s"
 
 #. module: website
 #. odoo-javascript
@@ -2541,7 +2541,7 @@ msgstr "Vista base"
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_groups
 #, python-format
 msgid "Basic"
-msgstr "Básico"
+msgstr "Básica"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -3484,7 +3484,7 @@ msgstr "Contacto"
 #: model_terms:ir.ui.view,arch_db:website.s_text_block_h2_contact
 #, python-format
 msgid "Contact Us"
-msgstr "Contáctenos"
+msgstr "Contáctanos"
 
 #. module: website
 #. odoo-python
@@ -3504,7 +3504,7 @@ msgstr "Contactar visitante"
 #: model_terms:ir.ui.view,arch_db:website.s_text_cover
 #: model_terms:ir.ui.view,arch_db:website.template_footer_headline
 msgid "Contact us"
-msgstr "Contáctenos"
+msgstr "Contáctanos"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.contactus
@@ -3904,7 +3904,7 @@ msgstr "D - H - M - S"
 #: code:addons/website/static/src/components/wysiwyg_adapter/wysiwyg_adapter.js:0
 #, python-format
 msgid "DRAG BUILDING BLOCKS HERE"
-msgstr "ARRASTRE BLOQUES DE CREACIÓN AQUÍ"
+msgstr "ARRASTRA LOS BLOQUES DE CREACIÓN AQUÍ"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_alert_options
@@ -4819,7 +4819,7 @@ msgstr "Correo electrónico y marketing"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
 msgid "Email Marketing"
-msgstr "Marketing por correo electrónico"
+msgstr "Marketing por correo"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -5881,7 +5881,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_website_controller_page_listing_layout
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Grid"
-msgstr "Tabla"
+msgstr "Cuadrícula"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -6397,8 +6397,8 @@ msgid ""
 "If you discard the current edits, all unsaved changes will be lost. You can "
 "cancel to return to edit mode."
 msgstr ""
-"Todos los cambios sin guardar se perderán si descarta las ediciones "
-"actuales. Puede cancelar para regresar al modo de edición."
+"Perderás todos los cambios sin guardar si descartas las ediciones actuales. "
+"Cancela para regresar al modo de edición."
 
 #. module: website
 #. odoo-javascript
@@ -6499,7 +6499,7 @@ msgstr "Muro de imágenes"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "In"
-msgstr "En"
+msgstr "Entrada"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_pages_kanban_view
@@ -8034,7 +8034,7 @@ msgid ""
 "them an SMS, or call them right away while they are browsing your website."
 msgstr ""
 "Monitoree a sus visitantes mientras navegan en su sitio web con la "
-"aplicación Marketing social de Odoo. Interactúe con ellos con solo un clic "
+"aplicación Redes sociales de Odoo. Interactúe con ellos con solo un clic "
 "gracias al chat en vivo o con una notificación emergente. Si han completado "
 "uno de sus formularios, también puede enviarles un SMS o llamarles mientras "
 "navegan por su sitio web."
@@ -8278,12 +8278,12 @@ msgstr "Noticias"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
 msgid "Newsletter"
-msgstr "Boletín informativo"
+msgstr "Boletín"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.external_snippets
 msgid "Newsletter Popup"
-msgstr "Ventana emergente de boletín informativo"
+msgstr "Ventana emergente de boletín"
 
 #. module: website
 #. odoo-javascript
@@ -10399,7 +10399,7 @@ msgstr "Secuencia"
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "Serve font from Google servers"
-msgstr "Utilizar fuente de servidores de Google"
+msgstr "Almacenar la fuente en los servidores de Google"
 
 #. module: website
 #: model:ir.model,name:website.model_ir_actions_server
@@ -10602,7 +10602,7 @@ msgstr "Mostrar la barra de cookies"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Show/Hide on Desktop"
-msgstr "Mostrar/ocultar en el escritorio"
+msgstr "Mostrar/ocultar en escritorio"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -10920,7 +10920,7 @@ msgstr "Estándar"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Start After"
-msgstr "Iniciar después"
+msgstr "Iniciar después de"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_call_to_action
@@ -11342,7 +11342,7 @@ msgstr "El nombre de la página de Instagram no es válido"
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "The chosen name already exists"
-msgstr "El nombre que eligió ya existe"
+msgstr "Ese nombre ya existe"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_s_showcase
@@ -12262,6 +12262,13 @@ msgid "URL matching those filters will be rewritten using the CDN Base URL"
 msgstr ""
 "La URL que coincida con esos filtros se escribirá a través de la URL Base "
 "CDN "
+
+#. module: website
+#. odoo-python
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "URL must not start with '#'."
+msgstr "La URL no debe comenzar con \"#\"."
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__url_to
@@ -13227,7 +13234,7 @@ msgstr "Menú del sitio web"
 #: model:ir.model.fields,field_description:website.field_website_page__website_meta_description
 #: model:ir.model.fields,field_description:website.field_website_seo_metadata__website_meta_description
 msgid "Website meta description"
-msgstr "Meta descripción del sitio web"
+msgstr "Metadescripción del sitio web"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_ir_ui_view__website_meta_keywords
@@ -13633,7 +13640,7 @@ msgstr ""
 #: code:addons/website/static/src/js/send_mail_form.js:0
 #, python-format
 msgid "Your Email"
-msgstr "Su correo electrónico"
+msgstr "Tu correo"
 
 #. module: website
 #. odoo-javascript
@@ -13651,7 +13658,7 @@ msgstr ""
 #: code:addons/website/static/src/js/send_mail_form.js:0
 #, python-format
 msgid "Your Name"
-msgstr "Su nombre"
+msgstr "Tu nombre"
 
 #. module: website
 #. odoo-javascript
@@ -13838,6 +13845,13 @@ msgid "and copy paste the address of the font page here."
 msgstr "y copie y pegue la dirección de la fuente aquí."
 
 #. module: website
+#. odoo-python
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "base URL of 'URL to' should not be same as 'URL from'."
+msgstr "La URL base de \"URL a\" no debe ser la misma que la de \"URL de\"."
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "big"
 msgstr "grande"
@@ -13880,7 +13894,7 @@ msgstr "btn-secondary"
 #: code:addons/website/static/src/client_actions/configurator/configurator.xml:0
 #, python-format
 msgid "business"
-msgstr "(empresa)"
+msgstr ", "
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -13991,7 +14005,7 @@ msgstr "fonts.google.com"
 #: code:addons/website/static/src/client_actions/configurator/configurator.xml:0
 #, python-format
 msgid "for my"
-msgstr "para mi"
+msgstr "para mi negocio de"
 
 #. module: website
 #. odoo-javascript

@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 20:35+0000\n"
+"POT-Creation-Date: 2025-06-27 02:30+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Wil Odoo, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/odoo/teams/41243/es/)\n"
@@ -3488,7 +3488,7 @@ msgstr "Administrador de Facturación"
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 #, python-format
 msgid "Bills"
-msgstr "Facturas (proveedores)"
+msgstr "Facturas de proveedores"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
@@ -5780,7 +5780,6 @@ msgstr "Descartar"
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_move_line.py:0
-#: code:addons/account/models/account_move_line.py:0
 #: model:ir.model.fields.selection,name:account.selection__account_move_line__display_type__discount
 #, python-format
 msgid "Discount"
@@ -5860,6 +5859,11 @@ msgstr "Descuento de %(amount)s si paga en %(days)s días"
 #: model:ir.model.fields,field_description:account.field_account_analytic_applicability__display_account_prefix
 msgid "Display Account Prefix"
 msgstr "Mostrar prefijo de la cuenta"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_journal__display_alias_fields
+msgid "Display Alias Fields"
+msgstr "Mostrar campos de alias"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_accrued_orders_wizard__display_amount
@@ -7737,9 +7741,9 @@ msgid ""
 "must charge VAT based on the delivery address. This rule applies regardless "
 "of where you are located."
 msgstr ""
-"Si vende productos y servicios a clientes en un país extranjero en la UE, "
-"debe cobrar IVA según la dirección de entrega. Esta regla aplica sin "
-"importar dónde esté ubicado."
+"Si vende productos y servicios a clientes en un país fuera de la UE, debe "
+"cobrar el IVA en función de la dirección de entrega. Esta regla aplica sin "
+"importar dónde se encuentra usted."
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_unreconcile_view
@@ -8423,7 +8427,7 @@ msgstr "Facturado"
 #: model_terms:ir.ui.view,arch_db:account.view_invoice_tree
 #, python-format
 msgid "Invoices"
-msgstr "Facturas (clientes)"
+msgstr "Facturas de clientes"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.portal_my_home_menu_invoice
@@ -17090,9 +17094,12 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/wizard/account_payment_register.py:0
 #, python-format
-msgid "You can't create payments for entries belonging to different branches."
+msgid ""
+"You can't create payments for entries belonging to different branches "
+"without access to parent company."
 msgstr ""
-"No puede crear pagos para asientos que pertenezcan a diferentes sucursales."
+"No puede crear pagos para asientos que pertenezcan a diferentes sucursales "
+"sin acceso a la compañía principal."
 
 #. module: account
 #. odoo-python

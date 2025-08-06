@@ -5,16 +5,16 @@
 # Translators:
 # Pak Wai Ho, 2024
 # 敬雲 林 <chingyun@yuanchih-consult.com>, 2024
-# Tony Ng, 2025
 # Wil Odoo, 2025
+# Tony Ng, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 20:35+0000\n"
+"POT-Creation-Date: 2025-06-27 02:30+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2025\n"
+"Last-Translator: Tony Ng, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/odoo/teams/41243/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1315,7 +1315,7 @@ msgstr "<strong>參考：</strong><br/>"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
 msgid "<strong>Shipping Address:</strong>"
-msgstr "<strong>送貨地址:</strong>"
+msgstr "<strong>送貨地址：</strong>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
@@ -2244,7 +2244,7 @@ msgstr "在你的應收憑單上增加支付二維碼"
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_cash_rounding__strategy__add_invoice_line
 msgid "Add a rounding line"
-msgstr "增加捨入明細"
+msgstr "新增捨入資料行"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
@@ -3875,7 +3875,7 @@ msgstr "項目表"
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report__availability_condition__coa
 msgid "Chart of Accounts Matches"
-msgstr "會計科目表匹配"
+msgstr "會計賬目總表相符"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_list
@@ -4029,7 +4029,8 @@ msgstr "欄位"
 msgid ""
 "Comma-separated list of fields from account.move.line (Journal Item). When "
 "set, this line will generate sublines grouped by those keys."
-msgstr "來自 account.move.line (日記帳項目) 的逗號分隔欄位列表. 設定後，此行將產生按這些鍵分組的子明細."
+msgstr ""
+"以逗號分隔的 account.move.line（日記賬項目）欄位清單。設定後，此資料行會產生一系列子資料行，並按照該些索引鍵將子資料行分組。"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__commercial_partner_id
@@ -4151,7 +4152,7 @@ msgstr "公司Storno會計"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__has_chart_of_accounts
 msgid "Company has a chart of accounts"
-msgstr "公司有科目表"
+msgstr "公司有賬目總表"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_bank_statement__company_id
@@ -5101,7 +5102,7 @@ msgstr "完稅後交貨"
 #. module: account
 #: model:ir.ui.menu,name:account.menu_board_journal_1
 msgid "Dashboard"
-msgstr "儀表板"
+msgstr "Dashboard"
 
 #. module: account
 #: model:ir.actions.server,name:account.action_check_hash_integrity
@@ -5582,7 +5583,6 @@ msgstr "捨棄"
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_move_line.py:0
-#: code:addons/account/models/account_move_line.py:0
 #: model:ir.model.fields.selection,name:account.selection__account_move_line__display_type__discount
 #, python-format
 msgid "Discount"
@@ -5662,6 +5662,11 @@ msgstr "提早付款可享 %(amount)s 折扣，期限為 %(days)s 天內"
 #: model:ir.model.fields,field_description:account.field_account_analytic_applicability__display_account_prefix
 msgid "Display Account Prefix"
 msgstr "顯示賬戶字首"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_journal__display_alias_fields
+msgid "Display Alias Fields"
+msgstr "顯示別名欄位"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_accrued_orders_wizard__display_amount
@@ -6014,7 +6019,7 @@ msgstr "稅項可用標籤所使用的動態網域"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_l10n_eu_oss
 msgid "EU Intra-community Distance Selling"
-msgstr "歐盟內部遠端銷售"
+msgstr "歐盟共同體內部跨境銷售"
 
 #. module: account
 #: model:account.incoterms,name:account.incoterm_EXW
@@ -6355,7 +6360,7 @@ msgstr "已排除的日記帳"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_company__expects_chart_of_accounts
 msgid "Expects a Chart of Accounts"
-msgstr "預計會計科目表"
+msgstr "預期有會計賬目總表"
 
 #. module: account
 #. odoo-javascript
@@ -6366,7 +6371,7 @@ msgstr "預計會計科目表"
 #: model:ir.model.fields.selection,name:account.selection__account_automatic_entry_wizard__account_type__expense
 #, python-format
 msgid "Expense"
-msgstr "費用"
+msgstr "開支"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_product_category__property_account_expense_categ_id
@@ -6386,7 +6391,7 @@ msgstr "費用應計科目"
 #: model:ir.model.fields.selection,name:account.selection__account_account__account_type__expense
 #: model_terms:ir.ui.view,arch_db:account.view_account_search
 msgid "Expenses"
-msgstr "費用"
+msgstr "開支"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_column__expression_label
@@ -8209,7 +8214,7 @@ msgstr "發票/賬單完全相符"
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 #: model_terms:ir.ui.view,arch_db:account.view_partner_property_form
 msgid "Invoicing"
-msgstr "會計"
+msgstr "發票"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_invoice_report__payment_state__invoicing_legacy
@@ -8344,7 +8349,7 @@ msgstr "之前是\"%(previous)s\"，現在是\"%(current)s\"."
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "Items With Missing Analytic Distribution"
-msgstr ""
+msgstr "缺漏分析分佈的項目"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__res_company__fiscalyear_last_month__1
@@ -9049,7 +9054,7 @@ msgstr "損失"
 #: model:ir.model.fields,field_description:account.field_account_cash_rounding__loss_account_id
 #: model:ir.model.fields,field_description:account.field_account_journal__loss_account_id
 msgid "Loss Account"
-msgstr "損失項目"
+msgstr "虧損賬戶"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_company__expense_currency_exchange_account_id
@@ -9418,7 +9423,7 @@ msgstr "模型名稱"
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_cash_rounding__strategy__biggest_tax
 msgid "Modify tax amount"
-msgstr "修改稅金金額"
+msgstr "修改稅項金額"
 
 #. module: account
 #: model:ir.model,name:account.model_ir_module_module
@@ -9429,7 +9434,7 @@ msgstr "模組"
 #: model:ir.model.fields.selection,name:account.selection__account_report_column__figure_type__monetary
 #: model:ir.model.fields.selection,name:account.selection__account_report_expression__figure_type__monetary
 msgid "Monetary"
-msgstr "貨幣的"
+msgstr "貨幣金額"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_setup_bank_manual_config__money_transfer_service
@@ -9981,7 +9986,7 @@ msgstr ""
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_customer
 msgid "Odoo helps you easily track all activities related to a customer."
-msgstr "Odoo 求助您輕鬆跟進與客戶相關的所有活動."
+msgstr "Odoo 協助你輕鬆追蹤與客戶相關的所有活動。"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.res_partner_action_supplier
@@ -11372,7 +11377,7 @@ msgstr "利潤及虧損(損益表)"
 #: model:ir.model.fields,field_description:account.field_account_cash_rounding__profit_account_id
 #: model:ir.model.fields,field_description:account.field_account_journal__profit_account_id
 msgid "Profit Account"
-msgstr "利潤科目"
+msgstr "利潤賬戶"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_journal__type__purchase
@@ -12219,7 +12224,7 @@ msgstr "儲存"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.res_config_settings_view_form
 msgid "Save this page and come back here to set up the feature."
-msgstr "儲存這個頁面並返回來設定這個特性。"
+msgstr "請儲存變更，然後返回此處，進一步設定功能。"
 
 #. module: account
 #. odoo-python
@@ -12355,7 +12360,7 @@ msgstr "檢視所有活動"
 #: code:addons/account/models/account_move_line.py:0
 #, python-format
 msgid "See items"
-msgstr ""
+msgstr "查看項目"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__type
@@ -12687,7 +12692,7 @@ msgstr "用於確保資料安全的序列"
 #: model:ir.model.fields.selection,name:account.selection__account_tax__tax_scope__service
 #: model_terms:ir.ui.view,arch_db:account.view_account_tax_search
 msgid "Services"
-msgstr "服務介紹"
+msgstr "服務"
 
 #. module: account
 #. odoo-javascript
@@ -13501,7 +13506,7 @@ msgstr "稅項名稱須獨一無二！"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_tax__tax_src_id
 msgid "Tax on Product"
-msgstr "產品上的稅"
+msgstr "產品稅項"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position_tax__tax_dest_id
@@ -15427,7 +15432,7 @@ msgstr "展開所有"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_report_line__code
 msgid "Unique identifier for this line."
-msgstr "此明細的唯一識別."
+msgstr "此資料行的唯一識別碼。"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__price_unit
@@ -16219,7 +16224,7 @@ msgstr "當日記帳被散列鎖定時，您不能按日期重新排序."
 msgid ""
 "You can only change the period/account for items that are not yet "
 "reconciled."
-msgstr "您只能更改尚未對帳項目的期間/科目."
+msgstr "對於未對賬的項目，你只可更改期間或記賬賬戶。"
 
 #. module: account
 #. odoo-python
@@ -16343,8 +16348,10 @@ msgstr "如果未在 %s 日記帳上設定暫記科目，則無法建立新的�
 #. odoo-python
 #: code:addons/account/wizard/account_payment_register.py:0
 #, python-format
-msgid "You can't create payments for entries belonging to different branches."
-msgstr "你不可為不同分支的記項建立付款。"
+msgid ""
+"You can't create payments for entries belonging to different branches "
+"without access to parent company."
+msgstr ""
 
 #. module: account
 #. odoo-python

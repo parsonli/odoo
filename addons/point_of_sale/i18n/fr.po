@@ -5105,7 +5105,7 @@ msgstr "Catégorie de produit du PdV"
 #. module: point_of_sale
 #: model:account.tax.group,name:point_of_sale.pos_taxe_group_0
 msgid "PoS Taxes"
-msgstr ""
+msgstr "Taxes PdV"
 
 #. module: point_of_sale
 #. odoo-python
@@ -7026,7 +7026,7 @@ msgstr "N° TVA"
 #: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/receipt_header/receipt_header.js:0
 #, python-format
 msgid "Tax ID: %(vatId)s"
-msgstr "Numéro d'identification fiscale : %(vatId)s"
+msgstr "N° TVA : %(vatId)s"
 
 #. module: point_of_sale
 #: model_terms:ir.ui.view,arch_db:point_of_sale.report_saledetails

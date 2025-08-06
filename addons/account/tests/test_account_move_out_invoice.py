@@ -4590,3 +4590,32 @@ class TestAccountMoveOutInvoiceOnchanges(AccountTestInvoicingCommon):
             bank_2,
             invoice_new.partner_bank_id
         )
+
+    def test_narration_preserved_when_use_invoice_terms_disabled(self):
+        """ Ensure narration is preserved when partner changes and invoice terms are disabled. """
+        self.env['ir.config_parameter'].sudo().set_param('account.use_invoice_terms', False)
+        invoice = self.invoice.copy({
+            'narration': 'Manually written terms by user',
+        })
+        invoice.write({
+            'partner_id': self.partner_b.id,
+        })
+        self.assertEqual(
+            invoice.narration,
+            "<p>Manually written terms by user</p>",
+            "Narration should be preserved after partner change when invoice terms are disabled"
+        )
+
+    def test_invoice_with_no_lines(self):
+        """
+        Test that previewing an invoice with no lines doesn't crash.
+        """
+        # Create invoice with no lines
+        invoice = self.env['account.move'].create({
+            'move_type': 'out_invoice',
+            'partner_id': self.partner_a.id,
+            'invoice_date': fields.Date.today(),
+            'currency_id': self.currency_data['currency'].id,
+        })
+        values = invoice._get_invoice_portal_extra_values()
+        self.assertIn('payment_state', values)

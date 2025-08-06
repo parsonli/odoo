@@ -604,6 +604,9 @@ msgid ""
 "            Egypt Tax Authority Invoice Integration\n"
 "        "
 msgstr ""
+"\n"
+"            دمج فواتير هيئة الضرائب المصرية\n"
+"        "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_ke_edi_oscu
@@ -4513,6 +4516,8 @@ msgid ""
 "\n"
 "E-invoice implementation for Saudi Arabia; Integration with ZATCA\n"
 msgstr ""
+"\n"
+"تطبيق نظام الفواتير الإلكترونية في المملكة العربية السعودية؛ التكامل مع هيئة الزكاة والضريبة والجمارك\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_sa_edi_pos
@@ -18906,7 +18911,7 @@ msgstr "إنشاء القائمة"
 #. module: base
 #: model:ir.model,name:base.model_wizard_ir_model_menu_create
 msgid "Create Menu Wizard"
-msgstr "إنشاء معالج قائمة"
+msgstr "معالج إنشاء القائمة "
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_server__state__object_create
@@ -19562,8 +19567,8 @@ msgstr "D - الكهرباء، الغاز، البخار، والتكييف "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_dhl
-msgid "DHL Express Shipping"
-msgstr "الشحن السريع من DHL"
+msgid "DHL Express Shipping (Legacy)"
+msgstr "الشحن عن طريق DHL Express (القديم) "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008
@@ -34953,8 +34958,14 @@ msgstr "أرسل طرودك عبر shiprocket وتتبعها عبر الإنتر
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_dhl
-msgid "Send your shippings through DHL and track them online"
-msgstr "أرسل شحناتك عبر DHL وتتبعها عبر الإنترنت "
+msgid ""
+"This is the legacy integration with DHL Express that is no longer supported."
+" Please install the new \"DHL Express Shipping\" module and uninstall this "
+"one as soon as possible."
+msgstr ""
+"هذا هو التكامل القديم مع DHL Express الذي لم يعد مدعوماً بعد الآن. يرجى "
+"تثبيت تطبيق \"DHL Express Shipping\" الجديد وإلغاء تثبيت هذا التطبيق في أقرب"
+" وقت ممكن. "
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_fedex_rest
