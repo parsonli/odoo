@@ -178,6 +178,7 @@ class AccountMove(models.Model):
                     continue
                 move = self._l10n_tr_nilvera_get_invoice_from_uuid(client, journal, document_uuid)
                 self._l10n_tr_nilvera_add_pdf_to_invoice(client, move, document_uuid)
+                # The purpose of this commit is to ensure that both the move and attachment are saved before the next iteration in case of errors.
                 self._cr.commit()
 
     def _l10n_tr_nilvera_get_invoice_from_uuid(self, client, journal, document_uuid):
@@ -268,6 +269,13 @@ class AccountMove(models.Model):
         return len(subscription_lines) != len(lines_to_check) or len(set(subscription_lines.mapped(
             lambda aml: (aml.deferred_start_date, aml.deferred_end_date))
         )) > 1
+
+    def _l10n_tr_nilvera_einvoice_check_negative_lines(self):
+        return any(
+            line.display_type not in {'line_note', 'line_section'}
+            and (line.quantity < 0 or line.price_unit < 0)
+            for line in self.invoice_line_ids
+        )
 
     # -------------------------------------------------------------------------
     # CRONS

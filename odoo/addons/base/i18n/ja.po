@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* base
-# 
+# * base
+#
 # Translators:
 # Andy Yiu, 2024
 # Martin Trigaux, 2024
@@ -9,20 +9,22 @@
 # Ryoko Tsuda <ryoko@quartile.co>, 2024
 # Wil Odoo, 2025
 # Junko Augias, 2025
-# 
+# "Junko Augias (juau)" <juau@odoo.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-03 11:38+0000\n"
-"PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Junko Augias, 2025\n"
-"Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
+"PO-Revision-Date: 2025-09-25 01:40+0000\n"
+"Last-Translator: \"Junko Augias (juau)\" <juau@odoo.com>\n"
+"Language-Team: Japanese <https://translate.odoo.com/projects/odoo-17/base/ja/"
+">\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_at_reports
@@ -2458,7 +2460,9 @@ msgid ""
 "Allow website visitors to chat with the collaborators. This module also brings a feedback tool for the livechat and web pages to display your channel with its ratings on the website.\n"
 msgstr ""
 "\n"
-"ウェブサイトの訪問者が共同編集者とチャットできるようにします。このモジュールは、WebチャットとWebページのフィードバックツールを提供して、ウェブサイトでの評価とともにチャネルを表示します。\n"
+"ウェブサイトの訪問者が共同編集者とチャットできるようにします。このモジュール"
+"は、ライブチャットとWebページのフィードバックツールを提供して、ウェブサイトで"
+"の評価とともにチャネルを表示します。\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale_picking
@@ -2858,7 +2862,7 @@ msgid ""
 "Auto-complete partner companies' data\n"
 msgstr ""
 "\n"
-"取引先企業のデータをオートコンプリートする\n"
+"取引先企業のデータを自動入力する\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll_dimona
@@ -3544,7 +3548,8 @@ msgid ""
 "- Extended address fields.\n"
 msgstr ""
 "\n"
-"バージョン3.0のデリバリーガイド(Complemento XML Carta de Porte)を拡張するためのブリッジモジュール。\n"
+"バージョン3.0の配送伝票(Complemento XML Carta de "
+"Porte)を拡張するためのブリッジモジュール。\n"
 "- 輸出商品 (COMEX)\n"
 "- 拡張住所フィールド\n"
 
@@ -3557,7 +3562,8 @@ msgid ""
 "- Extended address fields.\n"
 msgstr ""
 "\n"
-"バージョン3.1のデリバリーガイド(Complemento XML Carta de Porte)を拡張するブリッジモジュールです。\n"
+"バージョン3.1の配送伝票(Complemento XML Carta de "
+"Porte)を拡張するブリッジモジュールです。\n"
 "- 輸出品 (COMEX)\n"
 "- 拡張アドレスフィールド\n"
 
@@ -3570,7 +3576,7 @@ msgid ""
 "- extended address fields\n"
 msgstr ""
 "\n"
-"配送ガイドを拡長するブリッジモジュール(Complemento XML Carta de Porte)\n"
+"配送伝票を拡長するブリッジモジュール(Complemento XML Carta de Porte)\n"
 "- 輸出商品 (COMEX)\n"
 "- 拡張住所フィールド\n"
 
@@ -3598,7 +3604,8 @@ msgid ""
 "Bridge module to make the website e-commerce compatible with the product configurator\n"
 msgstr ""
 "\n"
-"        ウェブサイトのeコマースをプロダクトコンフィギュレーターと互換性を持たせるためのブリッジモジュール\n"
+"ウェブサイトのeコマースをプロダクトコンフィギュレータと互換性を持たせるための"
+"ブリッジモジュール\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_base_automation_hr_contract
@@ -9012,10 +9019,10 @@ msgid ""
 "guide.\n"
 msgstr ""
 "\n"
-"AからBの間で商品を送った証明として配送ガイド (Complemento XML Carta de Porte)\n"
+"AからBの間で商品を送った証明として配送伝票 (Complemento XML Carta de Porte)\n"
 "が必要です。\n"
 "\n"
-"配送ガイドを作成できるのは、配送オーダが検証されて\n"
+"配送伝票を作成できるのは、配送オーダが検証されて\n"
 "からです。\n"
 
 #. module: base
@@ -9029,10 +9036,10 @@ msgid ""
 "guide.\n"
 msgstr ""
 "\n"
-"AからBの間で商品を送った証明として配送ガイド (Guía de Remisión) \n"
+"AからBの間で商品を送った証明として配送伝票 (Guía de Remisión) \n"
 "が必要です。\n"
 "\n"
-"配送ガイドを作成できるのは、配送オーダが検証されて\n"
+"配送伝票を作成できるのは、配送オーダが検証されて\n"
 "からです。\n"
 
 #. module: base
@@ -9051,14 +9058,15 @@ msgid ""
 "the SII.\n"
 msgstr ""
 "\n"
-"AからBの間で商品を送った証明として配送ガイド (guia de despacho) \n"
+"AからBの間で商品を送った証明として配送伝票 (guia de despacho) \n"
 "が必要です。\n"
 "\n"
-"それが取引先で設定可能なのは価格が配送ガイドで必要で\n"
+"それが取引先で設定可能なのは価格が配送伝票で必要で\n"
 "それが販売オーダまたはプロダクト自体に由来する\n"
 "必要がある場合です\n"
 "\n"
-"配送ガイドを作成できるのは、配送オーダが検証されてからです。その後、請求書と同じ流れで\n"
+"配送伝票を作成できるのは、配送オーダが検証されてからです。その後、"
+"請求書と同じ流れで\n"
 "SIIに送られます。\n"
 
 #. module: base
@@ -14741,7 +14749,7 @@ msgstr "一括送信SMSにリード/案件情報を追加"
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat_mail_bot
 msgid "Add livechat support for OdooBot"
-msgstr "OdooBotのWebチャットサポートを追加します"
+msgstr "OdooBotのライブチャットサポートを追加します"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_sale
@@ -16014,7 +16022,7 @@ msgstr "自動インストールが必要"
 #. module: base
 #: model:ir.module.module,summary:base.module_partner_autocomplete
 msgid "Auto-complete partner companies' data"
-msgstr "パートナー企業のデータをオートコンプリートする"
+msgstr "取引先企業のデータを自動入力する"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module__auto_install
@@ -17195,7 +17203,7 @@ msgstr "CRM ゲーミフィケーション"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_livechat
 msgid "CRM Livechat"
-msgstr "CRMWebチャット"
+msgstr "CRMライブチャット"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_mail_plugin
@@ -17481,7 +17489,7 @@ msgstr "チャド"
 #. module: base
 #: model:ir.actions.act_window,name:base.action_res_users_my
 msgid "Change My Preferences"
-msgstr "設定の変更"
+msgstr "個人設定を変更"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.change_password_wizard_action
@@ -17642,7 +17650,7 @@ msgstr "チリ-会計報告"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cl_edi_stock
 msgid "Chile - E-Invoicing Delivery Guide"
-msgstr "チリ - 電子請求配送ガイド"
+msgstr "チリ - 電子請求配送伝票"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cl_edi
@@ -18789,7 +18797,7 @@ msgstr "カスタマイズ可能なワークシートを作成"
 #. module: base
 #: model:ir.module.module,summary:base.module_crm_livechat
 msgid "Create lead from livechat conversation"
-msgstr "Webチャットの会話からリードを作成する"
+msgstr "ライブチャットの会話からリードを作成する"
 
 #. module: base
 #: model:ir.module.module,description:base.module_event_crm
@@ -22343,7 +22351,7 @@ msgstr "フルアクセス"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_industry__full_name
 msgid "Full Name"
-msgstr "名称 (フル)"
+msgstr "氏名"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_menu__complete_name
@@ -25609,7 +25617,7 @@ msgstr "ウェブサイト訪問からのリードジェネレーション"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_crm_livechat
 msgid "Lead Livechat Sessions"
-msgstr "Webチャットセッションをリードする"
+msgstr "ライブチャットセッションをリードする"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_social_crm
@@ -25868,7 +25876,7 @@ msgstr "リトアニアの税金標準監査ファイル"
 #: model:ir.module.category,name:base.module_category_website_live_chat
 #: model:ir.module.module,shortdesc:base.module_im_livechat
 msgid "Live Chat"
-msgstr "Webチャット"
+msgstr "ライブチャット"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_currency_rate_live
@@ -26897,27 +26905,27 @@ msgstr "メキシコ - 会計"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_stock
 msgid "Mexico - Electronic Delivery Guide"
-msgstr "メキシコ - 電子配送ガイド"
+msgstr "メキシコ - 電子配送伝票"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_stock_30
 msgid "Mexico - Electronic Delivery Guide - Version 3.0"
-msgstr "メキシコ - 電子配送ガイド - Version 3.0"
+msgstr "メキシコ - 電子配送伝票 - Version 3.0"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_stock_extended
 msgid "Mexico - Electronic Delivery Guide Comex"
-msgstr "メキシコ - 電子配送ガイドComex"
+msgstr "メキシコ - 電子配送伝票Comex"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_stock_extended_30
 msgid "Mexico - Electronic Delivery Guide Comex - Version 3.0"
-msgstr "メキシコ - 電子配送ガイドComex - Version 3.0"
+msgstr "メキシコ - 電子配送伝票Comex - Version 3.0"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_stock_extended_31
 msgid "Mexico - Electronic Delivery Guide Comex - Version 3.1"
-msgstr "メキシコ - 電子配送ガイド Comex - Version 3.1"
+msgstr "メキシコ - 電子配送伝票 Comex - Version 3.1"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_reports_closing
@@ -30042,7 +30050,7 @@ msgstr "OdooBot - HR"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_im_livechat_mail_bot
 msgid "OdooBot for livechat"
-msgstr "Webチャット用のOdooBot"
+msgstr "ライブチャット用のOdooBot"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_12
@@ -31450,7 +31458,7 @@ msgstr "ペルー - 在庫レポート"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pe_edi_stock
 msgid "Peruvian - Electronic Delivery Note"
-msgstr "ペルー - 電子納品書"
+msgstr "ペルー - 電子配送伝票"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_pe_pos
@@ -31600,7 +31608,8 @@ msgstr "修正内容は指定のグループの全ユーザに適用されます
 msgid ""
 "Please use the change password wizard (in User Preferences or User menu) to "
 "change your own password."
-msgstr "あなた自身のパスワードを変更をするには、パスワード変更ウィザード（ユーザ設定またはユーザメニューの中の）を利用して下さい。"
+msgstr "あなた自身のパスワードを変更をするには、パスワード変更ウィザード（ユーザ個人"
+"設定またはユーザメニュー内）を利用して下さい。"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_order_tracking_display
@@ -31825,7 +31834,7 @@ msgstr "価格精度"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__primary_color
 msgid "Primary Color"
-msgstr "原色"
+msgstr "メインカラー"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_ca_check_printing
@@ -33044,7 +33053,7 @@ msgstr "レンタル製造ブリッジ"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_rental_product_configurators
 msgid "Rental Product Configurators Tests"
-msgstr "レンタルプロダクト設定テスト"
+msgstr "レンタルプロダクトコンフィギュレータテスト"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_stock_renting
@@ -34123,7 +34132,7 @@ msgstr "複数選択の検索パネルアイテムにドメインを含めるこ
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company__secondary_color
 msgid "Secondary Color"
-msgstr "二次色"
+msgstr "サブカラー"
 
 #. module: base
 #: model:ir.ui.menu,name:base.menu_security
@@ -34254,7 +34263,7 @@ msgstr "eコマースでレンタルプロダクトを販売する"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_renting_product_configurator
 msgid "Sell rental products on your eCommerce and manage Product Configurator"
-msgstr "eコマースでレンタルプロダクトを販売し、プロダクト設定を管理する"
+msgstr "eコマースでレンタルプロダクトを販売し、プロダクトコンフィギュレータを管理する"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_stock_renting
@@ -36206,12 +36215,12 @@ msgstr "テスト ディスカス用スイート 企業版"
 #. module: base
 #: model:ir.module.module,summary:base.module_test_rental_product_configurators
 msgid "Test Suite for Rental Product Configurators"
-msgstr "レンタルプロダクト設定用のスイートをテストする"
+msgstr "レンタルプロダクトコンフィギュレータのテストスイート"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_sale_product_configurators
 msgid "Test Suite for Sale Product Configurator"
-msgstr "テスト 販売プロダクトコンフィギュレータ用 スイート"
+msgstr "販売プロダクトコンフィギュレータのテストスイート"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_website_sale_full
@@ -36644,7 +36653,8 @@ msgid ""
 "The languages that you selected have been successfully installed."
 "                            Users can choose their favorite language in "
 "their preferences."
-msgstr "選択した言語が正常にインストールされました。 ユーザは環境設定で好きな言語を選択できます。"
+msgstr "選択した言語が正常にインストールされました。 "
+"ユーザは個人設定で好きな言語を選択できます。"
 
 #. module: base
 #. odoo-python
@@ -36653,7 +36663,8 @@ msgstr "選択した言語が正常にインストールされました。 ユ�
 msgid ""
 "The languages that you selected have been successfully installed. Users can "
 "choose their favorite language in their preferences."
-msgstr "選択した言語は正常にインストールされました。ユーザは追加設定で好きな言語を選択できます。"
+msgstr "選択した言語は正常にインストールされました。ユーザは個人設定で好きな言語を選"
+"択できます。"
 
 #. module: base
 #. odoo-python
@@ -37725,7 +37736,7 @@ msgstr "木曜"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_livechat
 msgid "Ticketing, Support, Livechat"
-msgstr "チケット、サポート、Webチャット"
+msgstr "チケット、サポート、ライブチャット"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_slides
@@ -37809,7 +37820,7 @@ msgstr "タイムシート / 勤怠レポート"
 #: model:ir.model.fields,field_description:base.field_res_partner__tz
 #: model:ir.model.fields,field_description:base.field_res_users__tz
 msgid "Timezone"
-msgstr "時間帯"
+msgstr "タイムゾーン"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner__tz_offset
@@ -39220,7 +39231,7 @@ msgstr "ベネズエラ - 会計"
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_mx_edi_stock_30
 msgid "Version 3.0 of the delivery guide (Complemento XML Carta de Porte)."
-msgstr "配送ガイド(Complemento XML Carta de Porte)のバージョン3.0。"
+msgstr "配送伝票(Complemento XML Carta de Porte)のバージョン3.0。"
 
 #. module: base
 #. odoo-python
@@ -39317,7 +39328,7 @@ msgstr "ビュー継承モード"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_crm_livechat
 msgid "View livechat sessions for leads"
-msgstr "リードのWebチャットセッションを表示する"
+msgstr "リードのライブチャットセッションを表示する"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_ui_view
@@ -39618,7 +39629,7 @@ msgstr "ウェブサイトのヘルプデスク"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk_livechat
 msgid "Website IM Livechat Helpdesk"
-msgstr "ウェブサイトのIMWebチャットヘルプデスク"
+msgstr "ウェブサイトのIMライブチャットヘルプデスク"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_jitsi
@@ -39635,7 +39646,7 @@ msgstr "ウェブサイトリンク"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_livechat
 msgid "Website Live Chat"
-msgstr "ウェブサイトWebチャット"
+msgstr "ウェブサイトライブチャット"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_mail
@@ -40779,7 +40790,7 @@ msgstr "eコマース レンタル"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_renting_product_configurator
 msgid "eCommerce Rental with Product Configurator"
-msgstr "eコマース プロダクト設定でのレンタル"
+msgstr "プロダクトコンフィギュレータ付きのeコマースレンタル"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_stock_renting
@@ -40860,7 +40871,7 @@ msgstr "取得"
 msgid ""
 "has been successfully installed.\n"
 "                            Users can choose their favorite language in their preferences."
-msgstr "は正常にインストールされました。ユーザは環境設定で好きな言語を選択できます。"
+msgstr "は正常にインストールされました。ユーザは個人設定で好きな言語を選択できます。"
 
 #. module: base
 #. odoo-python
