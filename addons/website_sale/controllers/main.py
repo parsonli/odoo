@@ -1780,6 +1780,16 @@ class WebsiteSale(payment_portal.PaymentPortal):
 
         return values
 
+    @http.route(
+        _express_checkout_shipping_route + '/compute_taxes', type='json', auth='public',
+        website=True, sitemap=False,
+    )
+    def express_checkout_shipping_address_compute_taxes(self):
+        order_sudo = request.website.sale_get_order()
+        order_sudo._recompute_taxes()
+
+        return payment_utils.to_minor_currency_units(order_sudo.amount_total, order_sudo.currency_id)
+
     def _get_shop_payment_errors(self, order):
         """ Check that there is no error that should block the payment.
 
@@ -2124,7 +2134,9 @@ class CustomerPortal(sale_portal.CustomerPortal):
     @http.route('/my/orders/reorder_modal_content', type='json', auth='public', website=True)
     def my_orders_reorder_modal_content(self, order_id, access_token):
         try:
-            sale_order = self._document_check_access('sale.order', order_id, access_token=access_token)
+            sale_order = self._document_check_access(
+                'sale.order', order_id, access_token=access_token,
+            ).with_user(request.env.user).sudo()
         except (AccessError, MissingError):
             return request.redirect('/my')
 

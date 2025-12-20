@@ -198,7 +198,7 @@ class SaleOrder(models.Model):
         compute='_compute_team_id',
         store=True, readonly=False, precompute=True, ondelete="set null",
         change_default=True, check_company=True,  # Unrequired company
-        tracking=True,
+        tracking=True, index=True,
         domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]")
 
     # Lines and line based computes
@@ -1141,7 +1141,7 @@ class SaleOrder(models.Model):
     def action_update_prices(self):
         self.ensure_one()
 
-        self._recompute_prices()
+        self.with_context(pricelist_update=True)._recompute_prices()
 
         if self.pricelist_id:
             message = _("Product prices have been recomputed according to pricelist %s.",
@@ -1241,7 +1241,7 @@ class SaleOrder(models.Model):
         return action
 
     def _get_invoice_grouping_keys(self):
-        return ['company_id', 'partner_id', 'currency_id']
+        return ['company_id', 'partner_id', 'currency_id', 'fiscal_position_id']
 
     def _nothing_to_invoice_error_message(self):
         return _(

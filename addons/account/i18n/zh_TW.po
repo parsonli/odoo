@@ -8,13 +8,14 @@
 # Wil Odoo, 2025
 # Tony Ng, 2025
 # "Tony Ng (ngto)" <ngto@odoo.com>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-12 02:56+0000\n"
-"PO-Revision-Date: 2025-09-17 01:40+0000\n"
-"Last-Translator: \"Tony Ng (ngto)\" <ngto@odoo.com>\n"
+"POT-Creation-Date: 2025-12-04 18:36+0000\n"
+"PO-Revision-Date: 2025-12-06 17:01+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://translate.odoo.com/"
 "projects/odoo-17/account/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: account
 #. odoo-python
@@ -1215,7 +1216,7 @@ msgstr "<span>5.00</span>"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.report_payment_receipt_document
 msgid "<span>Amount In Currency</span>"
-msgstr "<span>原幣金額</span>"
+msgstr "<span>該貨幣金額</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.bill_preview
@@ -2128,11 +2129,9 @@ msgstr "應計項目過賬"
 #: code:addons/account/wizard/accrued_orders.py:0
 #, python-format
 msgid ""
-"Accrual entry created on %(date)s: %(accrual_entry)s.                    And "
-"its reverse entry: %(reverse_entry)s."
+"Accrual entry created on %(date)s: %(accrual_entry)s.                And its "
+"reverse entry: %(reverse_entry)s."
 msgstr ""
-"於 %(date)s 建立的應計項目記項： %(accrual_entry)s 。相關反向記項： "
-"%(reverse_entry)s 。"
 
 #. module: account
 #. odoo-python
@@ -2646,7 +2645,7 @@ msgstr "金額類型"
 #: model:ir.model.fields,field_description:account.field_account_move_line__amount_currency
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_tree
 msgid "Amount in Currency"
-msgstr "外幣金額"
+msgstr "該貨幣金額"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment_register__source_amount
@@ -5753,7 +5752,7 @@ msgstr "折扣日"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__discount_amount_currency
 msgid "Discount amount in Currency"
-msgstr "折扣金額於幣別"
+msgstr "該貨幣折扣金額"
 
 #. module: account
 #. odoo-python
@@ -7330,6 +7329,11 @@ msgid "How total tax amount is computed in orders and invoices"
 msgstr "在訂單和應收憑單中如何計算總稅額"
 
 #. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "ICE:"
+msgstr "ICE:"
+
+#. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__id
 #: model:ir.model.fields,field_description:account.field_account_account_tag__id
 #: model:ir.model.fields,field_description:account.field_account_accrued_orders_wizard__id
@@ -8786,7 +8790,7 @@ msgstr "六月"
 #. module: account
 #: model:ir.model,name:account.model_kpi_provider
 msgid "KPI Provider"
-msgstr ""
+msgstr "指標提供者"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__kanban_dashboard
@@ -12027,7 +12031,7 @@ msgstr "殘值金額"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__amount_residual_currency
 msgid "Residual Amount in Currency"
-msgstr "殘值金額幣別"
+msgstr "該貨幣剩餘金額"
 
 #. module: account
 #. odoo-python
@@ -16670,7 +16674,7 @@ msgstr "如果沒有至少一個應收/應付款明細，您將無法打開付�
 msgid ""
 "You can't provide a foreign currency without specifying an amount in 'Amount "
 "in Currency' field."
-msgstr "如果沒有在'貨幣金額'欄位中指定金額，您無法提供外幣."
+msgstr "若要提供外幣，必須在「該貨幣金額」欄位輸入金額。"
 
 #. module: account
 #. odoo-python
@@ -17700,6 +17704,14 @@ msgstr ""
 msgid ""
 "{{ object.company_id.name }} Payment Receipt (Ref {{ object.name or 'n/a' }})"
 msgstr "{{ object.company_id.name }} 付款收據(編號 {{ object.name 或 'n/a' }})"
+
+#, python-format
+#~ msgid ""
+#~ "Accrual entry created on %(date)s: %(accrual_entry)s.                    "
+#~ "And its reverse entry: %(reverse_entry)s."
+#~ msgstr ""
+#~ "於 %(date)s 建立的應計項目記項： %(accrual_entry)s 。相關反向記項： "
+#~ "%(reverse_entry)s 。"
 
 #, python-format
 #~ msgid ""

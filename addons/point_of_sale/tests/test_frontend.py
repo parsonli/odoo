@@ -938,6 +938,8 @@ class TestUi(TestPointOfSaleHttpCommon):
     def test_07_pos_combo(self):
         setup_pos_combo_items(self)
         self.office_combo.write({'lst_price': 50})
+        # Archive a product to test that combo lines with archived products do not appear
+        self.office_combo.combo_ids.combo_line_ids.product_id.filtered(lambda p: p.name == 'Combo Product 1').active = False
         self.main_pos_config.with_user(self.pos_user).open_ui()
         self.start_tour(f"/pos/ui?config_id={self.main_pos_config.id}", 'PosComboPriceTaxIncludedTour', login="pos_user")
         order = self.env['pos.order'].search([])
@@ -1021,7 +1023,7 @@ class TestUi(TestPointOfSaleHttpCommon):
             'nomenclature_id': barcodes_gs1_nomenclature.id
         })
 
-        self.env['product.product'].create({
+        product_1 = self.env['product.product'].create({
             'name': 'Product 1',
             'available_in_pos': True,
             'list_price': 10,
@@ -1044,6 +1046,13 @@ class TestUi(TestPointOfSaleHttpCommon):
             'list_price': 10,
             'taxes_id': False,
             'barcode': '3760171283370',
+        })
+
+        self.env['product.packaging'].create({
+            'name': 'Product Packaging 10 Products',
+            'qty': 10,
+            'product_id': product_1.id,
+            'barcode': '08431673020132',
         })
 
         self.main_pos_config.with_user(self.pos_user).open_ui()
@@ -1352,7 +1361,7 @@ class TestUi(TestPointOfSaleHttpCommon):
             'list_price': 1000,
             'taxes_id': [(6, 0, [tax.id])],
         })
-        
+
         self.main_pos_config.with_user(self.pos_user).open_ui()
         self.start_tour("/pos/ui?config_id=%d" % self.main_pos_config.id, 'PaymentScreenInvoiceOrder', login="pos_user")
 
@@ -1363,7 +1372,7 @@ class TestUi(TestPointOfSaleHttpCommon):
 
         invoice = self.env['account.move'].search([('invoice_origin', '=', order.name)], limit=1)
         self.assertTrue(invoice)
-        self.assertFalse(invoice.invoice_payment_term_id) 
+        self.assertFalse(invoice.invoice_payment_term_id)
 
         self.assertAlmostEqual(order.amount_total, invoice.amount_total, places=2, msg="Order and Invoice amounts do not match.")
 
@@ -1372,6 +1381,28 @@ class TestUi(TestPointOfSaleHttpCommon):
         setup_pos_combo_items(self)
         self.main_pos_config.with_user(self.pos_user).open_ui()
         self.start_tour(f"/pos/ui?config_id={self.main_pos_config.id}", 'test_combo_with_custom_attribute', login="pos_user")
+
+    def test_combo_disallowLineQuantityChange(self):
+        setup_pos_combo_items(self)
+        self.main_pos_config.with_user(self.pos_user).open_ui()
+        self.start_tour(f"/pos/ui?config_id={self.main_pos_config.id}", 'test_combo_disallowLineQuantityChange', login="pos_user")
+        self.start_tour(f"/pos/ui?config_id={self.main_pos_config.id}", 'test_combo_disallowLineQuantityChange_2', login="pos_user")
+
+    def test_draft_order_deletion_with_printer(self):
+        self.env['pos.printer'].create({
+            'name': 'Printer',
+            'printer_type': 'epson_epos',
+            'epson_printer_ip': '0.0.0.0',
+            'product_categories_ids': [Command.set(self.env['pos.category'].search([]).ids)],
+        })
+
+        self.main_pos_config.write({
+            'is_order_printer': True,
+            'printer_ids': [Command.set(self.env['pos.printer'].search([]).ids)],
+        })
+        self.main_pos_config.with_user(self.pos_user).open_ui()
+        self.start_tour(f"/pos/ui?config_id={self.main_pos_config.id}", 'test_draft_order_deletion_with_printer', login="pos_user")
+
 
 # This class just runs the same tests as above but with mobile emulation
 class MobileTestUi(TestUi):

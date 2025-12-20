@@ -330,6 +330,11 @@ export class ProductScreen extends ControlButtonsMixin(Component) {
         ) {
             customProductOptions.quantity = qty.value;
         }
+        if (product?._getPackagingQty(productBarcode)) {
+            customProductOptions.quantity = customProductOptions.quantity
+                ? customProductOptions.quantity * product._getPackagingQty(productBarcode)
+                : product._getPackagingQty(productBarcode);
+        }
         return { product, lotBarcode, customProductOptions };
     }
     /**
@@ -372,6 +377,9 @@ export class ProductScreen extends ControlButtonsMixin(Component) {
             const currentQuantity = selectedLine.get_quantity();
             if (newQuantity >= currentQuantity) {
                 selectedLine.set_quantity(newQuantity);
+                for (const line of selectedLine.comboLines ?? []) {
+                    line.set_quantity(newQuantity, true);
+                }
             } else if (newQuantity >= selectedLine.saved_quantity) {
                 await this.handleDecreaseUnsavedLine(newQuantity);
             } else {
@@ -386,8 +394,14 @@ export class ProductScreen extends ControlButtonsMixin(Component) {
         const selectedLine = order.get_selected_orderline();
         const decreaseQuantity = selectedLine.get_quantity() - newQuantity;
         selectedLine.set_quantity(newQuantity);
+        for (const line of selectedLine.comboLines ?? []) {
+            line.set_quantity(newQuantity, true);
+        }
         if (newQuantity == 0) {
             order._unlinkOrderline(selectedLine);
+            for (const line of selectedLine.comboLines ?? []) {
+                order._unlinkOrderline(line);
+            }
         }
         return decreaseQuantity;
     }

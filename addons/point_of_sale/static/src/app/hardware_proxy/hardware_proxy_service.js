@@ -151,7 +151,6 @@ export class HardwareProxy extends EventBus {
             const response = await browser
                 .fetch(`${url}/hw_proxy/hello`, {
                     signal: timeoutController.signal,
-                    targetAddressSpace: "local",
                 })
                 .catch(() => ({}));
             if (response.ok) {
@@ -192,10 +191,11 @@ export class HardwareProxy extends EventBus {
         return this.message("log", { arguments: [...arguments] });
     }
     async openCashbox(action = false) {
+        const isPrinterConnected = ["connected", "init"].includes(this.connectionInfo.status) || this.pos.config.epson_printer_ip;
         if (
             this.pos.config.iface_cashdrawer &&
             this.printer &&
-            ["connected", "init"].includes(this.connectionInfo.status)
+            isPrinterConnected
         ) {
             this.printer.openCashbox();
             if (action) {
